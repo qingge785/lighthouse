@@ -3,7 +3,7 @@ import time
 from datetime import datetime
 
 # ================== 配置区 ==================
-API_KEY = "lh_live_vI6rDHTL-gEL-6FDScjt2uZc4BZA9eNz"                    # ←←← 这里填你的 Lighthouse API Key
+API_KEY = "lh_live_WT54MEQlcDWoZAwyNsOGMRiM2M6drbzK"                    # ←←← 这里填你的 Lighthouse API Key
 
 CHECK_INTERVAL = 60          # 秒，轮询间隔（建议 30~300 秒）
 VALUE_THRESHOLD = 10.0       # 只有大于这个值的任务才会输出报告
