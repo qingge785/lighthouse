@@ -1,29 +1,22 @@
 ---
 name: lhdao-viewer
-description: 查看并实时监控 Lighthouse (LHDao) 所有 Engagement 任务的状态、进度、已完成数量、消耗预算和价格（totalBudget / consumedBudget / remainingPool）。
-version: 1.1
+description: 【仅查看】列出 LHDao 所有任务 + 查看单个任务详情 + 实时监控价格、进度、已完成数、消耗预算。API Key 已硬编码在代码中，无需 Membrane 授权。
+version: 1.3
 author: your-github-username
-tags: [lhdai, lhdao, twitter, campaign, monitor, budget, price]
+tags: [lhdai, lhdao, campaign, monitor, budget, price, viewer]
 ---
 
-# LHDao 任务查看 & 实时价格监控
+# LHDao 任务查看器（仅查看 + 价格监控）
 
-**功能**（仅查看，不创建任务）：
-- 列出当前所有任务（支持按状态筛选）
-- 查看单个任务的完整详情（含价格、预算消耗、剩余池、进度）
-- 实时轮询多个任务的状态、进度、已完成数、消耗预算
-- 自动高亮每个任务的**价格信息**（总预算、已消耗、剩余、平台手续费）
+**重要说明**：
+- API Key 已硬编码在 `lhdao_monitor.py` 中
+- **不需要** 提供 Key，也**不需要** Membrane 登录授权
+- 只读功能：列出任务、查看详情、实时轮询价格和进度
 
-**直接在 OpenClaw 聊天里说下面任意一句话**：
-- “查看我的 LHDao 所有任务”
-- “监控我所有的 LHDao 任务价格”
-- “实时轮询任务 ID: abc123 的状态和预算消耗”
-- “列出所有 ACTIVE 状态的任务并显示价格”
+**直接在聊天里说**：
+- “查看我的所有 LHDao 任务”
+- “监控所有任务的价格和进度”
+- “查看任务 ID: xxxxx 的价格详情”
+- “实时轮询我的 LHDao 任务”
 
-**仓库地址**：https://github.com/qingge785/lighthouse
-
-**加载方式**（推荐）：
-1. 把本仓库完整 URL 粘贴到 OpenClaw 聊天框
-2. 说：“安装这个 GitHub skill” 或 “use this github skill”
-
-技能会自动读取 `lhdao_monitor.py` 执行查看和监控。
+仓库地址：https://github.com/qingge785/lighthouse
